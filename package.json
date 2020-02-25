@@ -1,0 +1,32 @@
+{
+  "name": "node-auth1-project",
+  "version": "1.0.0",
+  "description": "Using Node.js, Express and Knex to build an API that provides Register and Login functionality using SQLite to store User information.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronjan98/node-auth1-project.git"
+  },
+  "keywords": [],
+  "author": "Lambda School",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.10",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronjan98/node-auth1-project/issues"
+  },
+  "homepage": "https://github.com/aaronjan98/node-auth1-project#readme"
+}

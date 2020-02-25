@@ -31,7 +31,12 @@ const sessionConfig = {
 
 configureMiddleware(server);
 
-server.use('/api', apiRouter);
 server.use(session(sessionConfig));
+server.use('/api', apiRouter);
+
+server.get("/", (req, res) => {
+    console.log(req.session);
+    res.json({ api: "up" });
+  });
 
 module.exports = server;
